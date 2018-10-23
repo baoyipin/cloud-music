@@ -6,6 +6,11 @@ import Music from "./container/music/music";
 import Friends from "./container/friends/friends";
 import Login from "./container/login/login";
 import Registe from "./container/login/register";
+import Search from "./container/search/search";
+import PlayDetail from "./container/player/playdetail";
+import Footer from "./container/footer/footer";
+import Test from "./test";
+
 export default class App extends Component{
     render(){
         return(
@@ -17,6 +22,10 @@ export default class App extends Component{
                    <Route path="/loginhome" component={LoginHome} />
                    <Route path="/login" component={Login} />
                    <Route path="/register" component={Registe} />
+                   <Route path="/search" component={Search} />
+                   <Route path="/playing" component={PlayDetail} />
+                   <Route path="/test" component={Test} />
+                   <Footer/>
                </div>
            </Router>
         )
